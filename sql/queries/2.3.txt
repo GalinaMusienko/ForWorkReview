@@ -1,0 +1,3 @@
+﻿2.3. Вывести к-во follower-ов для каждого пользователя.
+
+SELECT first_name, last_name, followers_num FROM User_Profile;

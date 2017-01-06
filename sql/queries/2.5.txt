@@ -1,0 +1,3 @@
+﻿2.5. Вывести пользователей у которых ни одного твита.
+
+SELECT first_name, last_name FROM User_Profile LEFT OUTER JOIN Users_Post USING (user_id) WHERE post_id IS NULL;

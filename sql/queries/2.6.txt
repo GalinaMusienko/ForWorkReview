@@ -1,0 +1,3 @@
+﻿2.6. Вывести к-во комментариев для каждого поста.
+
+SELECT COUNT(*), post_id FROM Comments_For_Post GROUP BY post_id;

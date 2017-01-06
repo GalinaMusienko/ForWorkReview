@@ -1,0 +1,3 @@
+﻿2.1. Вывести последние 5 опубликованных твитов.
+
+SELECT * FROM Twitts GROUP BY post_date DESC LIMIT 5

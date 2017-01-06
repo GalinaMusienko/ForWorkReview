@@ -1,0 +1,3 @@
+﻿1.6. Вывести все посты, которые начинаются на букву 'S'.
+
+SELECT * FROM Blog WHERE Post_Description LIKE ’S%’;
