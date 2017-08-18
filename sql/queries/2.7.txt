@@ -1,0 +1,6 @@
+2.7 Вывести все твиты (включая все твиты follower-ов) для данного пользователя, отсортированные по дате публикации (последние сверху). (!)
+
+
+SELECT twitts.user_id, twitts.post_id, twitts.post_title, twitts.content, user_profile.first_name, user_profile.last_name, followers.follower_id FROM
+(user_profile cross join followers on user_profile.user_id=followers.following_id)
+cross join twitts on followers.following_id=twitts.user_id where twitts.user_id=1;

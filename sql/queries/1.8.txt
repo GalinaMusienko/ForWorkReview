@@ -1,0 +1,5 @@
+1.8 Вывести топ 5 пользователей по к-ву опубликованных тегов.
+
+SELECT count(tag_id), user_profile.user_id, user_profile.first_name, user_profile.last_name
+FROM tags
+left JOIN user_profile using (user_id) group by user_id order by (count(tag_id)) DESC LIMIT 5;

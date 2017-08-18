@@ -1,3 +1,5 @@
 ﻿1.7. Для каждого тега, вывести к-во постов.
 
-SELECT COUNT(Post_ID), Tag FROM Blog GROUP BY Tag;
+SELECT count(twitts.post_id), twitts.post_title, tags.tag_content
+FROM twitts
+INNER JOIN tags using (tag_id) group by tag_content;
